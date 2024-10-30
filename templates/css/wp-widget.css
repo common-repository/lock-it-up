@@ -1,0 +1,356 @@
+/*********************************************************/
+.lockoverflow{
+	overflow: hidden;
+}
+.lock-black-back{
+	background: #000;
+}
+#lock-screen.body{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	font: 400 100%/100% 'Roboto', sans-serif;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+}
+#lock-screen .login-wrap{
+	width:465px;
+	height: 122px;
+	margin: 20% 0px 0px 35%;
+	padding: 0;
+	position: relative;
+}
+#lock-screen .login-wrap .profile-pic{
+	position: relative;
+	width:117px;
+	height: 117px;
+	background: #000;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+#wp-unlock-form{
+	margin: 0;
+	padding: 0;
+}
+#lock-screen .login-wrap .credential-cntnr{
+	width:70%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+#lock-screen .login-wrap .credential-cntnr h2{
+	font: 400 30px/30px 'Roboto', sans-serif;
+	color:#fff;
+	float: left;
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+#lock-screen .login-wrap .credential-cntnr .locked{
+	width:100%;
+	font: 300 20px/22px 'Roboto', sans-serif;
+	margin: 6px 0 0 0;
+	padding: 0;
+	color: #fff;
+	float: left;
+}
+#lock-screen .login-wrap .credential-cntnr input[type="password"]{
+	width: 281px;
+	height: 44px;
+	margin: 13px 0px 0px 0px;
+	padding: 0;
+	float: left;
+	border-style: none;
+	font: 300 19px/28px 'Roboto', sans-serif;
+	color:#000;
+	text-indent: 10px;
+	outline: none;
+	-webkit-appearance: none;
+    border-radius: 0;
+	background: rgba(255,255,255,.6);
+}
+#lock-screen .error{
+	background: rgba(255,0,0,.8) !important;
+}
+#lock-screen .login-wrap .credential-cntnr a{
+	width: 40px;
+	height: 44px;
+	background: #000;
+	float: left;
+	text-align: center;
+	position: relative;
+	margin: 13px 0px 0px 0px;
+	transition: all .3s;
+	padding: 0;
+}
+#lock-screen .login-wrap .credential-cntnr a img{
+	position: relative;
+	top:12px;
+	margin: 0;
+	padding: 0;
+}
+#lock-screen .login-wrap .credential-cntnr a:hover{
+	opacity: .7;
+}
+#lock-screen .widget-wrap{
+	position: fixed;
+	width:550px;
+	float: right;
+	top:0;
+	right:0;
+	margin: 0;
+	padding: 0;
+}
+#lock-screen .widget-wrap .time-clock{
+	width:100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#lock-screen .widget-wrap .time-clock h4{
+	font: 300 122px/122px 'Roboto', sans-serif;
+	color:#fff;
+	float: left;
+	width:98%;
+	padding:2% 2% 0 0;
+	text-align: right;
+	margin: 0;
+}
+#lock-screen .widget-wrap .time-clock p{
+	font: 100 44px/44px 'Roboto', sans-serif;
+	color:#fff;
+	float: left;
+	width:96%;
+	margin: 0;
+	padding:0 4% 0 0;
+	text-align: right;
+}
+#lock-screen .widget-wrap .normal-notifications{
+	width:100%;
+	height: 48px;
+	margin: 30px 0px 30px 0px;
+	padding: 0;
+	background: rgba(255, 255, 255, .6);
+	float: right;
+}
+#lock-screen .widget-wrap .normal-notifications ul{
+	width:96%;
+	left:4%;
+	margin: 8px 0 0 0;
+	padding: 0;
+	float: right;
+}
+#lock-screen .widget-wrap .normal-notifications ul li{
+	display: inline;
+	margin: 0 35px 0 0;
+	padding: 0;
+	position: relative;
+	float: left;
+}
+#lock-screen .widget-wrap .normal-notifications ul li img{
+	margin:0 4px 0 0;
+	padding: 0;
+	position: relative;
+	top:6px;
+}
+#lock-screen .widget-wrap .normal-notifications ul li a{
+	font: 400 14px/20px 'Roboto', sans-serif;
+	color:#000;
+	transition: all .3s;
+	cursor: text;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+}
+#lock-screen .widget-wrap .normal-notifications ul li a:hover{
+	opacity: .7;
+}
+#lock-screen .lock-error{
+	color: red;
+	font-weight: normal;
+}
+
+#lock-screen.body{
+	transition: background 1s;
+	background-size: cover;
+}
+@media (max-width: 1508px) {
+	#lock-screen  .login-wrap{
+		margin-left: 25%;
+	}
+	#lock-screen .widget-wrap{
+		width:300px;
+	}
+	#lock-screen .widget-wrap .normal-notifications{
+		width:100%;
+		height: 150px;
+		float: right;
+	}
+	#lock-screen .widget-wrap .normal-notifications ul li{
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 1182px) {
+	#lock-screen .login-wrap{
+		margin-left: 15%;
+	}
+    #lock-screen .widget-wrap{
+		width:200px;
+	}
+	#lock-screen .widget-wrap .time-clock h4{
+		font: 300 80px/80px 'Roboto', sans-serif;
+		color:#fff;
+		float: left;
+		width:100%;
+		padding:2% 0% 0 0;
+		text-align: right;
+	}
+	#lock-screen .widget-wrap .time-clock p{
+		font: 300 24px/24px 'Roboto', sans-serif;
+		color:#fff;
+		float: left;
+		width:97%;
+		padding:0 3% 0 0;
+		text-align: right;
+	}
+}
+@media (max-width: 860px){
+	
+	#lock-screen .widget-wrap{
+		position: absolute;
+		width:100%;
+		float: left;
+	}
+	#lock-screen .widget-wrap .time-clock h4{
+		font: 300 122px/122px 'Roboto', sans-serif;
+		color:#fff;
+		float: right;
+		width:100%;
+		text-align: right;
+		padding:0 0 0 0;
+		margin: 0;
+	}
+	#lock-screen .widget-wrap .time-clock p{
+		font: 100 44px/44px 'Roboto', sans-serif;
+		color:#fff;
+		float: right;
+		width:100%;
+		margin: 0;
+		padding:0 0 0 0;
+		text-align: right;
+	}
+	#lock-screen .widget-wrap .normal-notifications{
+		width:100%;
+		height: 48px;
+		margin: 30px 0px 30px 0px;
+		padding: 0;
+		background: rgba(255, 255, 255, .6);
+		float: right;
+	}
+	#lock-screen .widget-wrap .normal-notifications ul{
+		margin: 8px 0 0 0;
+		padding: 0;
+		float: right;
+		width: auto;
+	}
+	#lock-screen .login-wrap {
+		width: 465px;
+		height: 122px;
+		padding: 0;
+		margin-top:50%;
+		position: relative;
+		float: left;
+		
+	}
+}
+@media (max-width: 498px){
+	#lock-screen .widget-wrap .time-clock h4{
+		text-align: left;
+		margin: 0 0 0 10px;
+	}
+	#lock-screen .widget-wrap .time-clock p{
+		text-align: left;
+		margin-left: 10px;
+		float: left;
+	}
+	#lock-screen .widget-wrap .normal-notifications{
+		height: 130px;
+	}
+	#lock-screen .widget-wrap .normal-notifications ul{
+		float: left;
+		margin-left:10px;
+	}
+	#lock-screen .widget-wrap .normal-notifications ul li{
+		margin: 0 0px 10px 0;
+		width:100%;
+	}
+	#lock-screen .widget-wrap .normal-notifications ul li a{
+		text-align: center;
+	}
+	#lock-screen .widget-wrap .normal-notifications ul li img{
+		max-width: 70%;
+	}
+	#lock-screen .login-wrap {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: 250px;
+		margin-top: 86%;
+		position: relative;
+		float: left;
+	}
+
+	
+	
+	#lock-screen .login-wrap .profile-pic{
+		width:100%;
+		background: transparent;
+		margin: 0 0 0 10px;
+		padding: 0;
+	}
+	#lock-screen .login-wrap .profile-pic img{
+		max-width: 80%;
+	}
+	#wp-unlock-form{
+		margin: 0 auto;
+		padding: 0;
+	}
+	#lock-screen .login-wrap .credential-cntnr{
+		width:100%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	#lock-screen .login-wrap .credential-cntnr h2{
+		font: 400 24px/30px 'Roboto', sans-serif;
+		color:#fff;
+		float: left;
+		width:100%;
+		text-align: left;
+		margin: 0 0 0 10px;
+		padding: 0;
+	}
+	#lock-screen .login-wrap .credential-cntnr .locked{
+		width:100%;
+		font: 300 16px/22px 'Roboto', sans-serif;
+		margin: 6px 0 0 10px;
+		padding: 0;
+		text-align: left;
+		color: #fff;
+		float: left;
+	}
+	#lock-screen .login-wrap .credential-cntnr input[type="password"]{
+		margin: 13px 0px 0px 10px;
+	}
+	
+}

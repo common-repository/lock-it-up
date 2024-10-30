@@ -1,0 +1,136 @@
+.wp-lock-screen-settings .img_container{
+    float: left;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+    transition: .5s all;
+}
+.wp-lock-screen-settings .img_container:hover{
+    opacity: .8;
+}
+.wp-lock-screen-settings .lock-btn-div:hover{
+    opacity: .8;
+    background: #ccc;
+}
+.wp-lock-screen-settings .img_container input[type="checkbox"]{
+    display: none;
+}
+.wp-lock-screen-settings .img_container label{
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 160px;
+    padding: 10px;
+    border: solid 1px #ccc;
+}
+.wp-lock-screen-settings .img_container input[type="checkbox"]:checked + label{
+    background: #0074a2;
+}
+
+.wp-lock-screen-settings .img_container img{
+    height: 100px;
+    width: 160px;
+}
+.wp-lock-screen-settings .lock-color-pallette{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.wp-lock-screen-settings .lock-color-pallette .single-palette{
+    float: left;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 16px;
+    border-right: solid 1px #fff;
+    transition: .3s all;
+}
+.wp-lock-screen-settings .lock-color-pallette .single-palette input[type="radio"]{
+    display: none;
+}
+.wp-lock-screen-settings .lock-color-pallette .single-palette label{
+    float: left;
+    position: relative;
+    height: 30px;
+    width: 30px;
+
+}
+.wp-lock-screen-settings .lock-color-pallette .single-palette input[type="radio"]:checked + label{
+   height: 49px;
+   width:30px;
+   margin: -9px 0 0 0;
+   padding: 0;
+   
+}
+#lock-media-images{
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.wp-save{
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+#lock-mask{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 10000;
+    background: #000;
+}
+#lock-screen-cont{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 10002;
+    -ms-transition: background 1s;
+	-moz-transition: background 1s;
+	-o-transition: background 1s;
+	-webkit-transition: background 1s;
+	transition: background 1s;
+}
+.vegas-background{
+    z-index: 10001 !important;
+}
+.lock-btn-div{
+    float: left;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+    height: 100px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    line-height: 131px;
+    border: solid 1px #ccc;
+    transition: all .3s;
+}
+.lock_setting_group{
+    width: 100%;
+    margin:0px 0px 20px 0px;
+    float: left;
+    
+}
+.lock_setting_group label{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.lock_setting_group .description{
+    margin: 5px 0px 0px 0px;
+}
+.wp-lock-screen-settings h3{
+    margin-top: 30px;
+}
+.txtbox{
+    width:70px;
+}
